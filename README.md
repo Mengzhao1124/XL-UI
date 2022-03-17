@@ -1,4 +1,4 @@
-# uikit
+# XL-ui
 
 ## Project setup
 ```
