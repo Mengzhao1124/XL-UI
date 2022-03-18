@@ -34,7 +34,7 @@
     }
 
     private handleClose() {
-      this.updateVisible(false)
+      this.updateVisible(false);
     }
   }
 </script>
@@ -58,6 +58,7 @@
       transform: translateY(0px);
     }
   }
+
   .xl-dialog_wrapper
     position fixed
     top 0

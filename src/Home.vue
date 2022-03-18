@@ -33,11 +33,18 @@
 <!--  </div>-->
 <!--</template>-->
 
-<!-- input's test -->
+<!-- input's test-->
+<!--<template>-->
+<!--  <div class="root-home">-->
+<!--    <xl-input placeholder="请输入用户名" v-model="username" clearable></xl-input>-->
+<!--    <div>{{this.username}}</div>-->
+<!--    <xl-input placeholder="请输入用户名" v-model="username" showPassword></xl-input>-->
+<!--  </div>-->
+<!--</template>-->
+
+<!-- Switch's test -->
 <template>
-  <div class="root-home">
-    <xl-input placeholder="请输入用户名" v-model="username"></xl-input>
-  </div>
+  <xl-switch v-model="isActive"></xl-switch>
 </template>
 
 <script lang="ts">
@@ -48,12 +55,13 @@
   })
   export default class Home extends Vue {
     private username = '';
-    private visible = false;
+    // private visible = false;
+    private isActive = false;
   }
 </script>
 
 <style lang="stylus" scoped>
-  /*.root-home*/
+  .root-home
     /*background-color aqua*/
     /*width: 480px*/
     /*height: 180px*/
@@ -62,4 +70,6 @@
     /*justify-content space-between*/
     /*align-items center*/
     /*margin: 0 auto*/
+    .xl-input
+      width 240px
 </style>
